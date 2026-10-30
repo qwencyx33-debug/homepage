@@ -1,16 +1,17 @@
-JHON MARVIN S. IBANEZ — DIGITAL PORTFOLIO
+JHON MARVIN S. IBANEZ - DIGITAL PORTFOLIO
 
 CONTENTS
-- index.html: responsive portfolio website
-- assets/profile.jpg: profile photo used in the website
+- index.html, css/style.css, js/script.js: static portfolio files
+- assets/profile.jpg: profile photo
+- assets/projects/: project screenshots
+- vercel.json: static deployment configuration
 
-HOW TO VIEW
-1. Extract the ZIP file.
-2. Open the folder.
-3. Double-click index.html to preview it in your browser.
+LOCAL PREVIEW
+Open the project folder in VS Code, then use the Live Server extension to preview index.html.
 
-HOW TO PUBLISH
-Upload index.html and the assets folder together to your web hosting public_html folder.
-Keep the assets folder beside index.html so the profile photo loads.
+VERCEL DEPLOYMENT
+This is a static HTML/CSS/JavaScript site. Import the project from GitHub into Vercel with the framework preset set to Other, no build or install command, and output directory set to . (the project root). Keep index.html, css/, js/, assets/, and vercel.json at the repository root.
 
-Before publishing, review all contact details and project descriptions.
+You can also install the Vercel CLI and run `vercel` from this folder. Use `vercel --prod` when ready to publish.
+
+Before publishing, review the contact details and project descriptions.

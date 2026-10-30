@@ -16,7 +16,20 @@ assets/
 
 To replace your profile picture, use `assets/profile.jpg` or update the image `src` in `index.html`. The project screenshots are in `assets/projects/`; the Capstone and client project previews already use their screenshot files. Replace an image while keeping its filename, or update the corresponding image `src` in `index.html`.
 
-The site uses vanilla HTML, CSS, and JavaScript. GSAP and ScrollTrigger load from jsDelivr for project image and education timeline reveals. If the CDN is unavailable, the rest of the site and its CSS/IntersectionObserver reveals still work.
+## Deploy to Vercel
+
+This is a static HTML/CSS/JavaScript site; it has no package install or build step. The included `vercel.json` serves the project root and enables clean URLs.
+
+### Import from GitHub
+1. Push this entire project folder to a GitHub repository.
+2. In Vercel, choose **Add New → Project** and import that repository.
+3. Set the framework preset to **Other**. Leave the Build Command and Install Command empty; set Output Directory to `.` if Vercel asks for it.
+4. Deploy. Keep `index.html`, `css/`, `js/`, `assets/`, and `vercel.json` at the repository root.
+
+### Deploy with the Vercel CLI
+From this folder, run `vercel` and follow the prompts. Run `vercel --prod` when you are ready to publish the production deployment.
+
+GSAP and ScrollTrigger are loaded from jsDelivr for optional image/timeline effects. If the CDN is unavailable, the site still has its CSS and IntersectionObserver animations.
 
 ## Deploy to Hostinger with FileZilla
 1. In Hostinger hPanel, open Files > FTP Accounts and note the host, username, and port.
