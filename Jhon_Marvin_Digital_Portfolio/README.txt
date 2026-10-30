@@ -10,7 +10,7 @@ LOCAL PREVIEW
 Open the project folder in VS Code, then use the Live Server extension to preview index.html.
 
 VERCEL DEPLOYMENT
-This is a static HTML/CSS/JavaScript site. Import the project from GitHub into Vercel with the framework preset set to Other, no build or install command, and output directory set to . (the project root). Keep index.html, css/, js/, assets/, and vercel.json at the repository root.
+This is a static HTML/CSS/JavaScript site. Import the project from GitHub into Vercel. Set the Root Directory to the folder containing index.html (leave it blank when that file is at the repository root). vercel.json selects Other, skips build and install commands, and serves the project root. Keep index.html, css/, js/, assets/, and vercel.json together.
 
 You can also install the Vercel CLI and run `vercel` from this folder. Use `vercel --prod` when ready to publish.
 

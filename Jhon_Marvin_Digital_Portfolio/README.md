@@ -23,7 +23,7 @@ This is a static HTML/CSS/JavaScript site; it has no package install or build st
 ### Import from GitHub
 1. Push this entire project folder to a GitHub repository.
 2. In Vercel, choose **Add New → Project** and import that repository.
-3. Set the framework preset to **Other**. Leave the Build Command and Install Command empty; set Output Directory to `.` if Vercel asks for it.
+3. Set the Root Directory to the folder containing `index.html` (leave it blank if `index.html` is at the repository root). Set the framework preset to **Other**. The `vercel.json` already sets no build/install command and serves `.` as the output directory.
 4. Deploy. Keep `index.html`, `css/`, `js/`, `assets/`, and `vercel.json` at the repository root.
 
 ### Deploy with the Vercel CLI
