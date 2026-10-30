@@ -1,0 +1,3 @@
+[build]
+  # This is a plain static site; publish the folder containing index.html.
+  publish = "."

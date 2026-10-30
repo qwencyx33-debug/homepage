@@ -9,6 +9,9 @@ CONTENTS
 LOCAL PREVIEW
 Open the project folder in VS Code, then use the Live Server extension to preview index.html.
 
+NETLIFY DEPLOYMENT
+The netlify.toml publishes this project root. For a manual deploy, upload this exact project folder (the one containing index.html, css/, js/, and assets/), not its parent folder.
+
 VERCEL DEPLOYMENT
 This is a static HTML/CSS/JavaScript site. Import the project from GitHub into Vercel. Set the Root Directory to the folder containing index.html (leave it blank when that file is at the repository root). vercel.json selects Other, skips build and install commands, and serves the project root. Keep index.html, css/, js/, assets/, and vercel.json together.
 

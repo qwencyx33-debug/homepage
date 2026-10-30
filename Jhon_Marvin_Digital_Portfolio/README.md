@@ -16,6 +16,10 @@ assets/
 
 To replace your profile picture, use `assets/profile.jpg` or update the image `src` in `index.html`. The project screenshots are in `assets/projects/`; the Capstone and client project previews already use their screenshot files. Replace an image while keeping its filename, or update the corresponding image `src` in `index.html`.
 
+## Deploy to Netlify
+
+The included `netlify.toml` publishes the project root (`.`), where `index.html` and the `css/`, `js/`, and `assets/` folders live. For a manual deploy, upload this project folder itself—not its parent folder and not just individual files—to Netlify Drop or the site's deploy dropzone. For a Git-connected site, keep the Netlify base directory at the repository root and redeploy after pushing the updated files.
+
 ## Deploy to Vercel
 
 This is a static HTML/CSS/JavaScript site; it has no package install or build step. The included `vercel.json` serves the project root and enables clean URLs.
